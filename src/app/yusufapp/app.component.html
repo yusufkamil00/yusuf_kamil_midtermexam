@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let user of users" *ngIf="user.age > 20">
+    {{user.firstname}} {{user.lastname}}, {{user.age}}
+    
+    <app-user [parentUsers]="parentUsers"></app-user>
+  </li>
+</ul>
+
+
